@@ -1,3 +1,5 @@
+import sys
+sys.modules['audioop'] = None  # prevents Discord.py from importing audioop
 import discord
 from discord.ext import commands
 from datetime import datetime
@@ -684,3 +686,4 @@ async def on_ready():
 
 TOKEN="MTQzMzM0NjI4MDQ2NTI0MDA3NA.GUTpPB.LkL6b5mU9KaFXWRajuSWjqgAw0WkeA2MG4E7KE"
 bot.run(TOKEN)
+
